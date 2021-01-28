@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <title>DATA VISE</title>
+</head>
+<body>
+  <h1>DATA VISE</h1><br />
+  <p>Voici une data visualisation des rank univérsitaire </p>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="chart" id="scatter">
+            </div>
+        </div>
+        {% for a in artist_name %}
+            <p>({ a })</p>
+        {% endfor %}
+    </div>
+  </div>>
+</body>
+</html>
