@@ -1,22 +1,13 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>DATA VISE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-  <h1>DATA VISE</h1><br />
-  <p>Voici une data visualisation des rank univérsitaire </p>
-
-  <div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="chart" id="scatter">
-            </div>
-        </div>
-        {% for a in artist_name %}
-            <p>({ a })</p>
-        {% endfor %}
-    </div>
-  </div>>
+  {% for a in artist_name %}
+  <p>({ a })</p>
+  {% endfor %}
 </body>
 </html>

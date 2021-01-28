@@ -7,6 +7,6 @@ from app.application.artist_predict import *
 @app.route('/')
 def index():
   artist_name = data()
-  return render_template('index.html', plot= artist_name)
+  return render_template('index.html', artist_name = artist_name)
 
   
