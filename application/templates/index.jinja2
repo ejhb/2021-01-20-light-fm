@@ -1,0 +1,33 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<body>
+<div class="card">
+  <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo" />
+  <h1 class="site-title">PokeStats</h1>
+  <p class="subtitle">Ici tu affiché les stats d'un pokémon ou les comparé à un autre.</p>
+  <a href="/dashapppkmn/" class="dash-link">
+    <span>Pokémon</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+<div class="card">
+  <img src="{{ url_for('static', filename='img/fortnite.png') }}" class="logo" />
+  <h1 class="site-title">FortnHighte</h1>
+  <p class="subtitle">Ici tu peux retrouver un représentation graphique static des performance de joueurs Fortnite à jeun ou sous influance.</p>
+  <a href="/fortnite/" class="dash-link">
+    <span>Fortnite</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+<div class="card">
+  <img src="{{ url_for('static', filename='img/rl_logo.png') }}" class="logo" />
+  <h1 class="site-title">Rocket Camera</h1>
+  <p class="subtitle">Ici tu peux explorer les tendances des réglages camera Rocket League.</p>
+  <a href="/rocket/" class="dash-link">
+    <span>Rocket League</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+</body>
+{% endblock %}

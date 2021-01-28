@@ -1,0 +1,9 @@
+astroid @ file:///tmp/build/80754af9/astroid_1592495912941/work
+certifi==2020.12.5
+isort @ file:///tmp/build/80754af9/isort_1602603989581/work
+lazy-object-proxy @ file:///tmp/build/80754af9/lazy-object-proxy_1607707356794/work
+mccabe==0.6.1
+pylint @ file:///tmp/build/80754af9/pylint_1598623985952/work
+six @ file:///tmp/build/80754af9/six_1605205327372/work
+toml @ file:///tmp/build/80754af9/toml_1592853716807/work
+wrapt==1.11.2
