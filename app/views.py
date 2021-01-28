@@ -2,7 +2,7 @@
 from app import app
 from app.models import *
 from flask import render_template
-from app.application.artist_predict import *
+from app.application.artist_predict import data
 
 @app.route('/')
 def index():

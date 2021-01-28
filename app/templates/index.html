@@ -3,11 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../static/css/styles.css" rel="stylesheet" type="text/css" />
   <title>Document</title>
 </head>
 <body>
-  {% for a in artist_name %}
-  <p>({ a })</p>
-  {% endfor %}
+  <h1 id="title_app">Choose an Artist :</h1>
+  <p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.</p>
+  <form action="" method="POST"> 
+    <select name="artist_name" id="cars" multiple>
+      {% for a in artist_name %}
+      <option value ={{ a }}>{{ a }}</option>
+      {% endfor %}
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <h1 id="title_app">Here's your result :</h1>
+  <section id = "result_prediction"></section>
 </body>
 </html>

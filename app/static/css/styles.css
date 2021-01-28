@@ -1,0 +1,17 @@
+html{
+
+}
+#result_prediction{
+    height : 60vh;
+    width : 90vw;
+    border : 2px solid black;
+}
+
+select{
+    height: 20vh;
+    width: 90vw;
+}
+#title_app{
+    text-align: center;
+    
+}

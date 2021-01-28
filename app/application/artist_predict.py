@@ -9,8 +9,8 @@ import json
 from flask import render_template
 
 def data():
-    plays = pd.read_csv('./data/user_artists.dat', sep='\t')
-    artists = pd.read_csv('./data/artists.dat', sep='\t', usecols=['id','name'])
+    plays = pd.read_csv('app/data/user_artists.dat', sep='\t')
+    artists = pd.read_csv('app/data/artists.dat', sep='\t', usecols=['id','name'])
 
     # Merge artist and user pref data
     ap = pd.merge(artists, plays, how="inner", left_on="id", right_on="artistID")
